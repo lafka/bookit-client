@@ -1,0 +1,3 @@
+[submodule "js/eightval"]
+	path = js/eightval
+	url = git@github.com:lafka/eightval

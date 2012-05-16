@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Bookit!</title>
+		<link rel="stylesheet" href="bootstrap/css/bootstrap.min.css" />
+		<link rel="stylesheet" href="screen.css" />
+
+		<script type="text/javascript" src="js/eightval/src/dom.js"></script>
+		<script type="text/javascript" src="js/eightval/src/form.js"></script>
+		<script type="text/javascript" src="js/bookit.js"></script>
+	</head>
+	<body>
+		<header>
+			<div class="container">
+				<hgroup id="branding">
+					<h1>Bookit!</h1>
+					<h2>Taxonomied list of bookmarks</h2>
+				</hgroup>
+			</div>
+		</header>
+		<div class="container">
+			<div class="row" id="action-block">
+				<section id="create" class="span4">
+					<h1>Add bookmark</h1>
+					<div class="row">
+						<form method="post" class="fwt-validate">
+								<span class="span3">
+									<input type="text" class="clear default url" name="search" value="URL to add" />
+								</span>
+								<span class="span1">
+									<button class="btn btn-primary">Add</button>
+								</span>
+						</form>
+					</div>
+				</section>
+				<section id="search" class="span4 offset1">
+					<h1>Lookup bookmark</h1>
+					<div class="row">
+					<form method="post">
+						<span class="span3">
+							<input type="text" class="clear default" name="search" value="Search for bookmarks" />
+						</span>
+						<span class="span1">
+							<button type="submit" class="btn btn-primary">Lookup</button>
+						</span>
+					</form>
+				</div>
+				</section>
+			</div>
+			<div class="row">
+				<section id="list">
+					<ul>
+						<li>
+							<span class="id">#1</span>
+							<span class="text"><a href="#">http://munchmunch.now</a></span>
+							<ul>
+								<li><a href="#">pie</a></li>
+								<li><a href="#">muffin</a></li>
+								<li><a href="#">cookie</a></li>
+								<li><a href="#">beef</a></li>
+								<li><a href="#">macaroni</a></li>
+								<li><a href="#">donut</a></li>
+								<li><a href="#">omelet</a></li>
+							</ul>
+						</li>
+						<li>
+							<span class="id">#2</span>
+							<span class="text"><a href="#">http://time.to/get-wasted/</a></span>
+							<ul>
+								<li><a href="#">vodka</a></li>
+								<li><a href="#">bloody mary</a></li>
+								<li><a href="#">beer</a></li>
+								<li><a href="#">champagne</a></li>
+								<li><a href="#">prosecco</a></li>
+								<li><a href="#">weissebeir</a></li>
+							</ul>
+						</li>
+						<li>
+							<span class="id">#3</span>
+							<span class="text"><a href="#">http://cheesefactory.no/list-of-cheeses</a></span>
+							<ul>
+								<li><a href="#">chevre</a></li>
+								<li><a href="#">parmasan</a></li>
+								<li><a href="#">mozarella</a></li>
+							</ul>
+						</li>
+					</ul>
+				</section>
+			</div>
+			<footer>
+				Making links talk since about 5 min ago
+			</footer>
+		</div>
+	</body>
+</html>
